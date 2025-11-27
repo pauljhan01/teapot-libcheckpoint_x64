@@ -14,6 +14,19 @@
 
 #define DIFT_WRAPPER(function_name, return_type, ...) return_type function_name##__dift_wrapper__(__VA_ARGS__)
 
+DIFT_WRAPPER(setrlimit, int, int resource, const struct rlimit *rlim){
+        return 0;
+}
+
+DIFT_WRAPPER(__printf_chk, int, int flag, const char *buf, ...){
+        va_list args;
+        va_start(args, buf);
+        int done = printf(buf, args);
+        va_end(args);
+
+        return done;
+}
+
 // Taing source: read.
 DIFT_WRAPPER(read, ssize_t, int fd, void *buf, size_t count) {
     ssize_t read_size = read(fd, buf, count);

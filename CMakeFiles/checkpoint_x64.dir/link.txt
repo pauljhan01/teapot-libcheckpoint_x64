@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcheckpoint_x64.a  CMakeFiles/checkpoint_x64.dir/checkpoint.c.o CMakeFiles/checkpoint_x64.dir/checkpoint_asm.c.o CMakeFiles/checkpoint_x64.dir/signal_handler.c.o CMakeFiles/checkpoint_x64.dir/dift_support.c.o CMakeFiles/checkpoint_x64.dir/dift_wrappers.c.o CMakeFiles/checkpoint_x64.dir/report_gadget.c.o
+/usr/bin/ranlib libcheckpoint_x64.a

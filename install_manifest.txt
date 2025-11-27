@@ -1,0 +1,2 @@
+/usr/local/lib/libcheckpoint_x64.a
+/usr/local/lib/libcheckpoint_x64_nonest.a
